@@ -8,7 +8,7 @@
     --clr-font-250: #747479;
     --clr-font-300: #1D1D1F;
 
-    --ff-primary: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --ff-primary: 'Source Sans Pro', sans-serif;
 }
 
 *,
@@ -30,7 +30,7 @@ body {
 }
 
 footer {
-    font-size: 0.8em;
+    font-size: 0.85em;
     background-color: var(--clr-primary-050);
 }
 
@@ -54,26 +54,13 @@ ul {
 }
 
 legend {
-    padding: 0px 0px 2px;
-}
-
-h2 {
-    color: var(--clr-primary-050);
-    text-align: center;
-    padding: 1em 0 0 0;
-    font-size: 3.2em;
-    font-weight: 650;
-}
-
-h3 {
-    color: var(--clr-primary-050);
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 500;
+    padding-bottom: 2px;
 }
 
 main {
-    padding: 45px 0 0 0;
+    padding-top: 45px;
+    position: relative;
+    z-index: 4;
 }
 
 a:hover {
@@ -112,14 +99,6 @@ ul.menuOptions {
     color: rgb(190, 190, 190);
 }
 
-.bannerIgnore {
-    text-decoration: none;
-}
-
-.bannerIgnore:hover {
-    text-decoration: none;
-}
-
 .menuOptions > li:hover {
     color: var();
 }
@@ -154,8 +133,9 @@ ul.menuOptions {
     width: 100%;
     height: 3.1em;
     background: rgba(10, 10, 10, 0.92);
-    padding: 0.6em 0% 0% 0%;
+    padding-top: 0.4em;
     position: fixed;
+    z-index: 9999;
 }
 
 .alignMenu {
@@ -174,60 +154,88 @@ ul.menuOptions {
     padding: 0.75em 10%;
 }
 
-.fullBanner1 {
-    width: 100%;
-    height: 700px;
-    background-image: url("../images/iPad1980x700.png");
-    margin: 0 0 15px 0;
-}
-
-.fullBanner2 {
-    width: 100%;
-    height: 700px;
-    background-image: url("../images/iPhone12Lilla1980x700.png");
-    margin: 0 0 15px 0;
-}
-
-.fullBanner3 {
-    width: 100%;
-    height: 700px;
-    background-image: url("../images/appleWatch1980x700.png");
-    margin: 0 0 15px 0;
-}
-
 .footerOption {
     text-decoration: none;
     color: var(--clr-font-200);
 }
 
-.halfBanner1 {
-    background-image: url("../images/iMacHalf950x650.png");
-    display: inline-block;
-    width: 49%;
-    height: 650px;
-    margin: 0px 0px 10px 10px;
+.imageBanner {
+    width: 100%;
 }
 
-.halfBanner2 {
-    background-image: url("../images/appleMusicHalf950x650.png");
-    display: inline-block;
-    width: 49%;
-    height: 650px;
-    margin: 0px 0px 10px 10px;
+.bannerLinks > h4 {
+    display: block;
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    margin: .65em;
+    text-align: center;
 }
 
-.halfBanner3 {  
-    background-image: url("../images/iPhone12PROHalf950x650.png");
-    display: inline-block;
-    width: 49%;
-    height: 650px;
-    margin: 0px 0px 10px 10px;
+.bannerContent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.6em;
 }
 
-.halfBanner4 {
-    background-image: url("../images/appleWatchHalf950x650.png");
-    display: inline-block;
-    width: 49%;
-    height: 650px;
-    margin: 0px 0px 10px 10px;
+.fullScreenBanners {
+    display: grid;
+}
+
+.lightContent {
+    background-color: #fafafa;
+}
+
+.colorContent {
+    background-color: #efe5fd;
+}
+
+.lightContent * {
+    color: black;
+}
+
+.colorContent * {
+    color: black;
+}
+
+.darkContent {
+    background-color: black;
+}
+
+.darkContent * {
+    color: white;
+}
+
+h2 {
+    color: var(--clr-primary-050);
+    text-align: center;
+    padding: 1em 0 0 0;
+    font-size: 3.5em;
+    font-weight: 650;
+}
+
+h3 {
+    color: var(--clr-primary-050);
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.halfScreenBanners {
+    display: grid;
+    gap: 0.7em;
+    margin: 0.65em;
+    width: 100%;
+    grid-template-columns: repeat(2, 49%);
+}
+
+.noSelect {
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    cursor: default; 
 }

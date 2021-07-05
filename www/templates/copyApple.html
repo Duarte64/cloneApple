@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
+    <header class="noSelect">
 
         <nav id="areaMenu">
 
@@ -42,58 +45,119 @@
 
         <section class="fullScreenBanners">
             
-            <a href="#" class="bannerIgnore">
-                <div class="fullBanner1">
-                        <h2>iPad Pro</h2>
-                        <h3>O Poderoso Chip M11 da Apple está aqui.</h3>
+            <div class="bannerContent noSelect">
+                <div class="darkContent">
+                    <h2>iPad Pro</h2>
+                    <h3>O poderoso chip M1 da Apple está aqui.</h3>
+                    <div class="bannerLinks">
+                        <h4><a href="#">Saiba Mais ></a><a href="#">Comprar ></a></h4>
+                    </div>
                 </div>
-            </a>
+                <div>
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="images/iPad_700x480.png">
+                        <source media="(max-width: 1200px)" srcset="images/iPad_1200x600.png">
+                        <source media="(max-width: 1980px)" srcset="images/iPad_1980x500.png">
+                        <img src="images/iPad_1980x500.png" alt="" class="imageBanner">
+                    </picture>
+                </div>
+            </div>
 
-            <a href="#" class="bannerIgnore">
-                <div class="fullBanner2">
-                        <h2 style="color: black;">iPhone 12</h2>
-                        <h3 style="color: black;">Um grande avanço. E um design inovador.</h3>
+            <div class="bannerContent noSelect">
+                <div class="colorContent">
+                    <h2>iPhone 12</h2>
+                    <h3>Rápido que é uma beleza.</h3>
+                    <div class="bannerLinks">
+                        <h4><a href="#">Saiba Mais ></a><a href="#">Comprar ></a></h4>
+                    </div>
                 </div>
-            </a>
+                <div>
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="images/iPhone12_700x480.png">
+                        <source media="(max-width: 1200px)" srcset="images/iPhone12Lilla_1200x600.png">
+                        <source media="(max-width: 1980px)" srcset="images/iPhone12Lilla_1980x500.png">
+                        <img src="images/iPhone12Lilla1980x700.png" alt="" class="imageBanner">
+                    </picture>
+                </div>
+            </div>
 
-            <a href="#" class="bannerIgnore">
-                <div class="fullBanner3">
-                        <h2>Watch</h2>
-                        <h3>Um olhar em você. E um Salto à Frente.</h3>
+            <div class="bannerContent noSelect">
+                <div class="darkContent">
+                    <h2>Watch</h2>
+                    <h3>Um olhar em você. E um Salto à Frente.</h3>
+                    <div class="bannerLinks">
+                        <h4><a href="#">Saiba Mais ></a> <a href="#">Comprar ></a></h4>
+                    </div>
                 </div>
-            </a>
+                <div>
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="images/appleWatch_700x480.png">
+                        <source media="(max-width: 1200px)" srcset="images/appleWatch_1200x600.png">
+                        <source media="(max-width: 1980px)" srcset="images/appleWatch_1980x500.png">
+                        <img src="images/appleWatch_1980x500.png" alt="" class="imageBanner">
+                    </picture>
+                </div>
+            </div>
 
         </section>
 
         <section class="halfScreenBanners">
 
-            <a href="#">
-                <div class="halfBanner1">
-                    <h2 style="color: black;">iMac</h2>
-                    <h3 style="color: black;">Ultrafino. Na maior variedade de cores.</h3>
+            <div class="bannerContent noSelect">
+                <div class="lightContent">
+                    <h2>iMac</h2>
+                    <h3>Ultrafino. Na maior variedade de cores.</h3>
+                    <div class="bannerLinks">
+                        <h4><a href="#">Saiba Mais ></a> <a href="#">Comprar ></a></h4>
+                    </div>
+                    <picture>
+                        <source media="(max-width: 1980px)" srcset="images/iMac_950x450.png">
+                        <img src="images/iMac_950x450.png" alt="" class="imageBanner">
+                    </picture>
                 </div>
-            </a>
+            </div>
 
-            <a href="#">
-                <div class="halfBanner2">
-                    <h2 style="color: black;">Music</h2>
-                    <h3 style="color: black;">O seu estilo. Em qualquer lugar.</h3>
+            <div class="bannerContent noSelect">
+                <div class="lightContent">
+                    <h2>Music</h2>
+                    <h3>O seu estilo. Em qualquer lugar.</h3>
+                    <div class="bannerLinks">
+                        <h4><a href="#">Saiba Mais ></a> <a href="#">Comprar ></a></h4>
+                    </div>
+                    <picture>
+                        <source media="(max-width: 1980px)" srcset="images/appleMusicHalf_950x450.png">
+                        <img src="images/appleMusicHalf950x650.png" alt="" class="imageBanner">
+                    </picture>
                 </div>
-            </a>
+            </div>
 
-            <a href="#">
-                <div class="halfBanner3">
+            <div class="bannerContent noSelect">
+                <div class="darkContent">
                     <h2>iPhone12 Pro</h2>
                     <h3>Um salto radical.</h3>
+                    <div class="bannerLinks">
+                        <h4><a href="#">Saiba Mais ></a> <a href="#">Comprar ></a></h4>
+                    </div>
+                    <picture>
+                        <source media="(max-width: 1980px)" srcset="images/iPhone12Pro_950x450.png">
+                        <img src="images/iPhone12Pro_950x450.png" alt="" class="imageBanner">
+                    </picture>
                 </div>
-            </a>
+            </div>
 
-            <a href="#">
-                <div class="halfBanner4">
+            <div class="bannerContent noSelect">
+                <div class="darkContent">
                     <h2>Series 6</h2>
                     <h3>Um olhar em você. E um Salto à Frente.</h3>
+                    <div class="bannerLinks">
+                        <h4><a href="#">Saiba Mais ></a> <a href="#">Comprar ></a></h4>
+                    </div>
+                    <picture>
+                        <source media="(max-width: 1980px)" srcset="images/appleWatch_950x450.png">
+                        <img src="images/appleWatch_950x450.png" alt="" class="imageBanner">
+                    </picture>
                 </div>
-            </a>
+            </div>
 
         </section>
 
