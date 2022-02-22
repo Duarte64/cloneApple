@@ -1,241 +1,148 @@
-:root {
-    --clr-primary-000: #FFFFFF;
-    --clr-primary-050: #F5F5F7;
-    --clr-primary-400: #333333;
-
-    --clr-font-100: #b6b6b6;
-    --clr-font-200: #86868B;
-    --clr-font-250: #747479;
-    --clr-font-300: #1D1D1F;
-
-    --ff-primary: 'Source Sans Pro', sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+/* ------- Header ---------*/
+#areaMenu {
+  width: 100%;
+  padding: 0.75em 0em;
+  background: rgba(10, 10, 10, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body,
-h1,
-h2,
-h3,
-p {
-    margin: 0;
+.menuOptions li {
+  display: inline;
+  margin: 0px 32px;
+  color: #d7d7d7;
+  font-size: 13px;
+  cursor: pointer;
+}
+.menuOptions li:hover {
+  color: var();
+}
+@media screen and (max-width: 1200px) {
+  .menuOptions li {
+    margin: 0px 10px;
+  }
 }
 
-body {
-    font-family: var(--ff-primary);
+/* ------- Observation ---------*/
+.observation {
+  height: 3em;
+  background-color: #F5F5F7;
+  font-size: 0.9em;
+}
+.observation p {
+  text-align: center;
+  padding: 0.75em 0em;
+}
+.observation p a {
+  color: blue;
+}
+@media only screen and (max-width: 480px) {
+  .observation p {
+    padding: 0.2em;
+  }
 }
 
+/* ------- Full Screen Banners ---------*/
+.fullScreenBanners {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: #efe5fd;
+  text-align: center;
+}
+.fullScreenBanners:nth-child(even) {
+  background-color: black;
+  color: whitesmoke;
+}
+.fullScreenBanners:nth-child(odd) h4 {
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 1200px) {
+  .fullScreenBanners:nth-child(odd) h4 {
+    margin-bottom: 0px;
+  }
+}
+.fullScreenBanners h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.fullScreenBanners h3 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.fullScreenBanners h4 {
+  margin: 10px 0px;
+}
+.fullScreenBanners a {
+  text-decoration: none;
+  color: #1472d0;
+  font-weight: 400;
+  font-size: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .fullScreenBanners h2 {
+    font-size: 32px;
+  }
+  .fullScreenBanners h3 {
+    font-size: 24px;
+  }
+  .fullScreenBanners a {
+    font-size: 16px;
+  }
+}
+
+/* ------- Half Screen Banners ---------*/
+/* ------- Footer ---------*/
 footer {
-    font-size: 0.85em;
-    background-color: var(--clr-primary-050);
+  font-size: 0.85em;
+  background-color: #F5F5F7;
 }
-
-a {
-    text-decoration: none;
-    color: blue;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-li {
-    list-style-type: none;
-    padding: 2px 0px 2px;
-    color: var(--clr-font-200);
-}
-
-ul {
-    padding: 0px;
-}
-
-legend {
-    padding-bottom: 2px;
-}
-
-main {
-    padding-top: 45px;
-    position: relative;
-    z-index: 4;
-}
-
-a:hover {
-    text-decoration: underline var(--clr-font-200);;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-ul.menuOptions {
-    display: inline;
-    padding: 2%;
-    color: rgb(180, 180, 180);
-    padding: 0px;
-}
-
-.option {
-    display: inline-block;
-    color: rgb(190, 190, 190);
-    width: 9.5%;
-    text-align: center;
-    margin: auto 0px;
-    text-decoration: none;
-}
-
-.option:hover {
-    text-decoration: none;
-}
-
-.option:hover > li {
-    color: white;
-}
-
-.linksFooter:hover > a {
-    color: rgb(190, 190, 190);
-}
-
-.menuOptions > li:hover {
-    color: var();
+footer p {
+  display: block;
+  padding: 0.25em 0;
+  color: #b6b6b6;
 }
 
 .footerContent {
-    width: 55%;
-    margin: 0px auto;
+  width: 60%;
+  margin: auto;
 }
-
-.linksFooter {
-    display: inline-block;
-    width: 25%;
-}
-
-.textFooter {
-    display: block;
-    padding: 1em 0px 1em;
-    color: var(--clr-font-100);
+@media screen and (max-width: 900px) {
+  .footerContent {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 .listasFooter {
-    display: flex;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.legendFooter {
-    color: var(--clr-font-250);
-    font-weight: 600;
+.linksFooter {
+  width: 25%;
+  margin: auto;
+}
+.linksFooter ul {
+  list-style: none;
+}
+.linksFooter ul legend {
+  color: #747479;
+  font-weight: 600;
+}
+.linksFooter ul li a {
+  text-decoration: none;
+  color: #86868B;
 }
 
-#areaMenu {
-    font-size: 0.90em;
-    width: 100%;
-    height: 3.1em;
-    background: rgba(10, 10, 10, 0.92);
-    padding-top: 0.4em;
-    position: fixed;
-    z-index: 9999;
-}
-
-.alignMenu {
-    width: 57.5%;
-    margin: 5px auto;
-}
-
-.miniAdvice {
-    height: 3em;
-    background-color: var(--clr-primary-050); 
-    font-size: 0.9em;
-}
-
-.miniAdvice > p {
-    text-align: center;
-    padding: 0.75em 10%;
-}
-
-.footerOption {
-    text-decoration: none;
-    color: var(--clr-font-200);
-}
-
-.imageBanner {
-    width: 100%;
-}
-
-.bannerLinks > h4 {
-    display: block;
-    font-size: 21px;
-    line-height: 1.381;
-    font-weight: 400;
-    letter-spacing: .011em;
-    margin: .65em;
-    text-align: center;
-}
-
-.bannerContent {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.6em;
-}
-
-.fullScreenBanners {
-    display: grid;
-}
-
-.lightContent {
-    background-color: #fafafa;
-}
-
-.colorContent {
-    background-color: #efe5fd;
-}
-
-.lightContent * {
-    color: black;
-}
-
-.colorContent * {
-    color: black;
-}
-
-.darkContent {
-    background-color: black;
-}
-
-.darkContent * {
-    color: white;
-}
-
-h2 {
-    color: var(--clr-primary-050);
-    text-align: center;
-    padding: 1em 0 0 0;
-    font-size: 3.5em;
-    font-weight: 650;
-}
-
-h3 {
-    color: var(--clr-primary-050);
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: 500;
-}
-
-.halfScreenBanners {
-    display: grid;
-    gap: 0.7em;
-    margin: 0.65em;
-    width: 100%;
-    grid-template-columns: repeat(2, 49%);
-}
-
-.noSelect {
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-    cursor: default; 
-}
+/*# sourceMappingURL=style.css.map */

@@ -12,96 +12,61 @@
 </head>
 <body>
 
-    <header class="noSelect">
-
+    <header>
         <nav id="areaMenu">
-
-            <div class="alignMenu">
-
-                <ul class="menuOptions">
-                    <a href="#" class="option"><li>Logo</li></a>
-                    <a href="#" class="option"><li>Mac</li></a>
-                    <a href="#" class="option"><li>iPad</li></a>
-                    <a href="#" class="option"><li>iPhone</li></a>
-                    <a href="#" class="option"><li>Watch</li></a>
-                    <a href="#" class="option"><li>TV</li></a>
-                    <a href="#" class="option"><li>Music</li></a>
-                    <a href="#" class="option"><li>Suporte</li></a>
-                    <a href="#" class="option"><li>Lupa</li></a>
-                    <a href="#" class="option"><li>Sacola</li></a>
-                </ul>
-
-            </div>
-
+            <ul class="menuOptions">
+                <li>Mac</li>
+                <li>iPad</li>
+                <li>iPhone</li>
+                <li>Watch</li>
+                <li>TV</li>
+                <li>Suporte</li>
+            </ul>
         </nav>
-
     </header>
+
 
     <main>
         
-        <section class="miniAdvice">
-            <p><a href="#">Compre online</a> com assistência de especialistas, entrega grátis e muito mais.</p>
-        </section>
+        <section>
 
-        <section class="fullScreenBanners">
+            <div class="observation">
+                <p><a href="#">Compre online</a> com assistência de especialistas, entrega grátis e muito mais.</p>
+            </div>
             
-            <div class="bannerContent noSelect">
-                <div class="darkContent">
+            <article class="fullScreenBanners">
                     <h2>iPad Pro</h2>
                     <h3>O poderoso chip M1 da Apple está aqui.</h3>
-                    <div class="bannerLinks">
-                        <h4><a href="#">Saiba Mais ></a><a href="#">Comprar ></a></h4>
-                    </div>
-                </div>
-                <div>
+                    <h4><a href="#">Saiba Mais ></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Comprar ></a></h4>
                     <picture>
-                        <source media="(max-width: 700px)" srcset="images/iPad_700x480.png">
-                        <source media="(max-width: 1200px)" srcset="images/iPad_1200x600.png">
-                        <source media="(max-width: 1980px)" srcset="images/iPad_1980x500.png">
-                        <img src="images/iPad_1980x500.png" alt="" class="imageBanner">
+                        <source media="(min-width: 1200px)" srcset="images/iPadFullBanner.png">
+                        <img src="images/iPadMiniBanner.png" alt="" class="imageBanner">
                     </picture>
-                </div>
-            </div>
+            </article>
 
-            <div class="bannerContent noSelect">
-                <div class="colorContent">
-                    <h2>iPhone 12</h2>
-                    <h3>Rápido que é uma beleza.</h3>
-                    <div class="bannerLinks">
-                        <h4><a href="#">Saiba Mais ></a><a href="#">Comprar ></a></h4>
-                    </div>
-                </div>
-                <div>
-                    <picture>
-                        <source media="(max-width: 700px)" srcset="images/iPhone12_700x480.png">
-                        <source media="(max-width: 1200px)" srcset="images/iPhone12Lilla_1200x600.png">
-                        <source media="(max-width: 1980px)" srcset="images/iPhone12Lilla_1980x500.png">
-                        <img src="images/iPhone12Lilla1980x700.png" alt="" class="imageBanner">
-                    </picture>
-                </div>
-            </div>
+            <article class="fullScreenBanners">
+                <h2>iPhone 12</h2>
+                <h3>Rápido que é uma beleza.</h3>
+                <h4><a href="#">Saiba Mais ></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Comprar ></a></h4>
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="images/iPhone12FullBanner.png">
+                    <img src="images/iPhone12MiniBanner.png" alt="" class="imageBanner">
+                </picture>
+            </article>
 
-            <div class="bannerContent noSelect">
-                <div class="darkContent">
-                    <h2>Watch</h2>
-                    <h3>Um olhar em você. E um Salto à Frente.</h3>
-                    <div class="bannerLinks">
-                        <h4><a href="#">Saiba Mais ></a> <a href="#">Comprar ></a></h4>
-                    </div>
-                </div>
-                <div>
-                    <picture>
-                        <source media="(max-width: 700px)" srcset="images/appleWatch_700x480.png">
-                        <source media="(max-width: 1200px)" srcset="images/appleWatch_1200x600.png">
-                        <source media="(max-width: 1980px)" srcset="images/appleWatch_1980x500.png">
-                        <img src="images/appleWatch_1980x500.png" alt="" class="imageBanner">
-                    </picture>
-                </div>
-            </div>
+            <article class="fullScreenBanners">
+                <h2>Watch</h2>
+                <h3>Um olhar em você. E um Salto à Frente.</h3>
+                <h4><a href="#">Saiba Mais ></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Comprar ></a></h4>
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="images/appleWatchFullBanner.png">
+                    <img src="images/appleWatchMiniBanner.png" alt="" class="imageBanner">
+                </picture> 
+            </article>
 
         </section>
 
-        <section class="halfScreenBanners">
+        <!-- <section class="halfScreenBanners">
 
             <div class="bannerContent noSelect">
                 <div class="lightContent">
@@ -159,7 +124,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> !-->
 
     </main>
 
@@ -168,15 +133,13 @@
 
             <div class="footerContent">
 
-                <section class="textFooter">
-                    <p>Informação baseada na comparação entre a parte da frente do iPhone 12 (em Ceramic Shield) e a do iPhone da geração anterior.</p>
-                    <p>O conteúdo HDR com Alta Taxa de Quadros é limitado no momento. Em breve, mais conteúdo será disponibilizado.</p>
-                </section>
+                <p>Informação baseada na comparação entre a parte da frente do iPhone 12 (em Ceramic Shield) e a do iPhone da geração anterior.</p>
+                <p>O conteúdo HDR com Alta Taxa de Quadros é limitado no momento. Em breve, mais conteúdo será disponibilizado.</p>
 
                 <hr>
 
                 <nav class="listasFooter">
-                    
+
                     <div class="linksFooter">
                         <ul>
                             <legend><strong class="legendFooter">Descobrir e Comprar</strong></legend>
@@ -248,27 +211,6 @@
                         </ul>
                         <ul>
                             <legend><strong class="legendFooter">Para Você</strong></legend>
-                            <li><a href="#" class="footerOption">Mac</a></li>
-                            <li><a href="#" class="footerOption">iPad</a></li>
-                            <li><a href="#" class="footerOption">iPhone</a></li>
-                            <li><a href="#" class="footerOption">Watch</a></li>
-                            <li><a href="#" class="footerOption">TV</a></li>
-                            <li><a href="#" class="footerOption">Music</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="linksFooter">
-                        <ul>
-                            <legend><strong class="legendFooter">Valores da Apple</strong></legend>
-                            <li><a href="#" class="footerOption">Mac</a></li>
-                            <li><a href="#" class="footerOption">iPad</a></li>
-                            <li><a href="#" class="footerOption">iPhone</a></li>
-                            <li><a href="#" class="footerOption">Watch</a></li>
-                            <li><a href="#" class="footerOption">TV</a></li>
-                            <li><a href="#" class="footerOption">Music</a></li>
-                        </ul>
-                        <ul>
-                            <legend><strong class="legendFooter">Apple e Valores</strong></legend>
                             <li><a href="#" class="footerOption">Mac</a></li>
                             <li><a href="#" class="footerOption">iPad</a></li>
                             <li><a href="#" class="footerOption">iPhone</a></li>
