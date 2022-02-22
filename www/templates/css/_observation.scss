@@ -1,0 +1,21 @@
+/* ------- Observation ---------*/
+
+.observation {
+    height: 3em;
+    background-color: $lighter-gray; 
+    font-size: 0.9em;
+
+    p {
+        text-align: center;
+        padding: 0.75em 0em;
+
+        a {
+            color: $link-color;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        p {
+            padding: 0.2em;
+        }
+    }
+}

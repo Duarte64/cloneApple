@@ -1,0 +1,36 @@
+.halfScreenBanners {
+    display: flex;
+    flex-flow: row wrap;
+
+    @media screen and (max-width: 1399px) {
+        display: none;
+    }
+
+    &__bannerContent {
+        width: 50%;
+        margin: 2.5px 0px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+
+        &:nth-child(even) {
+            color: white;
+            background-color: black;
+        }
+
+        &:nth-child(odd) {
+            color: black;
+            background-color: white;
+        }
+
+        h3 {
+            font-weight: 400;
+        }
+
+        a {
+            text-decoration: none;
+            color: $link-color;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+/* ------- Header ---------*/
+
+#areaMenu {
+    width: 100%;
+    padding: 0.75em 0em;
+    background: $dark-background-200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuOptions {
+    
+    li {
+        display: inline;
+        margin: 0px 32px;
+        color: $light-gray;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $lighter-gray;
+        }
+
+        @media screen and (max-width: 1200px){
+            margin: 0px 10px;
+        }
+    }
+}

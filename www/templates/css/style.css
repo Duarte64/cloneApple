@@ -1,15 +1,8 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Source Sans Pro", sans-serif;
-}
-
 /* ------- Header ---------*/
 #areaMenu {
   width: 100%;
   padding: 0.75em 0em;
-  background: rgba(10, 10, 10, 0.9);
+  background: #0a0a0ae6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,12 +11,13 @@
 .menuOptions li {
   display: inline;
   margin: 0px 32px;
-  color: #d7d7d7;
-  font-size: 13px;
+  color: #d3d3d3;
+  font-size: 14px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .menuOptions li:hover {
-  color: var();
+  color: #f3f3f3;
 }
 @media screen and (max-width: 1200px) {
   .menuOptions li {
@@ -34,7 +28,7 @@
 /* ------- Observation ---------*/
 .observation {
   height: 3em;
-  background-color: #F5F5F7;
+  background-color: #f3f3f3;
   font-size: 0.9em;
 }
 .observation p {
@@ -42,7 +36,7 @@
   padding: 0.75em 0em;
 }
 .observation p a {
-  color: blue;
+  color: #1472d0;
 }
 @media only screen and (max-width: 480px) {
   .observation p {
@@ -61,7 +55,7 @@
 }
 .fullScreenBanners:nth-child(even) {
   background-color: black;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 .fullScreenBanners:nth-child(odd) h4 {
   margin-bottom: 100px;
@@ -101,16 +95,48 @@
   }
 }
 
-/* ------- Half Screen Banners ---------*/
+.halfScreenBanners {
+  display: flex;
+  flex-flow: row wrap;
+}
+@media screen and (max-width: 1399px) {
+  .halfScreenBanners {
+    display: none;
+  }
+}
+.halfScreenBanners__bannerContent {
+  width: 50%;
+  margin: 2.5px 0px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+.halfScreenBanners__bannerContent:nth-child(even) {
+  color: white;
+  background-color: black;
+}
+.halfScreenBanners__bannerContent:nth-child(odd) {
+  color: black;
+  background-color: white;
+}
+.halfScreenBanners__bannerContent h3 {
+  font-weight: 400;
+}
+.halfScreenBanners__bannerContent a {
+  text-decoration: none;
+  color: #1472d0;
+}
+
 /* ------- Footer ---------*/
 footer {
   font-size: 0.85em;
-  background-color: #F5F5F7;
+  background-color: #f3f3f3;
 }
 footer p {
   display: block;
   padding: 0.25em 0;
-  color: #b6b6b6;
+  color: #d3d3d3;
 }
 
 .footerContent {
@@ -126,23 +152,31 @@ footer p {
 
 .listasFooter {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
 }
 
 .linksFooter {
   width: 25%;
-  margin: auto;
 }
 .linksFooter ul {
   list-style: none;
 }
 .linksFooter ul legend {
-  color: #747479;
+  color: #86868B;
   font-weight: 600;
 }
 .linksFooter ul li a {
   text-decoration: none;
   color: #86868B;
 }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* ------- Half Screen Banners ---------*/
 
 /*# sourceMappingURL=style.css.map */

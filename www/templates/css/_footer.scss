@@ -1,0 +1,44 @@
+/* ------- Footer ---------*/
+footer {
+    font-size: 0.85em;
+    background-color: $lighter-gray;
+
+    p {
+        display: block;
+        padding: 0.25em 0;
+        color: $light-gray;
+    }
+}
+
+.footerContent {
+    width: 60%;
+    margin: auto;
+
+    @media screen and (max-width: 900px){
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.listasFooter {
+    display: flex;
+    flex-flow: row;
+}
+
+.linksFooter {
+    width: 25%;
+
+    ul {
+        list-style: none;
+        
+        legend {
+            color: $dark-gray;
+            font-weight: 600;
+        }
+
+        li a {
+            text-decoration: none;
+            color: $dark-gray;
+        }   
+    }
+}
